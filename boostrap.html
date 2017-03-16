@@ -6,12 +6,12 @@
         <title> BootStrap </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-        <script src="jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     
-    
+<body>
     <div class="container-fluid">
         <h3> div class sm</h3>
         <p> Resize the browser window to see the effect</p>
@@ -121,13 +121,149 @@
         </div>
     </div>
     
+    <div class="container">
+        <h3> Responsive Embed </h3>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gI-qz5TYKVI"></iframe>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <h3> Well Size </h3>
+        <div class="well well-sm"> Small Well </div>
+        <div class="well"> Normal Well </div>
+        <div class="well well-lg"> Large Well </div>
+    </div>
+    
+    <div class="container">
+        <h3> Buttons </h3>
+        <input type="submit" class="btn btn-primary btn-lg" value="Submit">
+        <button type="button" class="btn btn-danger btn-sm"> Button </button>
+        <a href="#" class="btn btn-info" role="button"> Link button </a>
+        <input type="button" class="btn btn-primary btn-block" value="block button">
+    </div>
+    
+    <div class="container-fluid">
+        <h3> Grouped buttons </h3>
+        
+        <h4> 1. btn-grouped //default horizontal </h4>
+        <div class="btn-group">
+            <input type="button" class="btn btn-primary" value="Apple">
+            <input type="button" class="btn btn-primary" value="Google">
+            <input type="button" class="btn btn-primary" value="Samsung">
+        </div>
+        
+        <h4> 2. btn-grouped-vertical </h4>
+        <div class="btn-group-vertical">
+            <input type="button" class="btn btn-danger" value="Apple">
+            <input type="button" class="btn btn-danger" value="Google">
+            <input type="button" class="btn btn-danger" value="Samsung">
+        </div>
+        
+        <h4> 3. Justified button group </h4>
+        <div class="btn-group btn-group-justified">
+            <div class="btn-group">
+                <input type="button" class="btn btn-info" value="Apple">
+            </div>
+            <div class="btn-group">
+                <input type="button" class="btn btn-info" value="Google">
+            </div>
+            <div class="btn-group">
+                <input type="button" class="btn btn-info" value="Samsung">
+             </div>
+        </div>
+        
+        <h4> 4. Nesting button groups &emp; Dropdown Menus </h4>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"> Apple </button>
+            <button type="button" class="btn btn-primary"> Google </button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-togle="dropdown"> Samsung <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#"> Tablet </a></li>
+                    <li><a href="#"> Phones </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h3> Glyphicons </h3>
+        <span class="glyphicon glyphicon-envelope"></span>
+        
+        <h5> 1. Inside P </h5>
+        <p> This is a glyphicon <span class="glyphicon glyphicon-envelope"></span> </p>
+        
+        <h5> 2. Inside a </h5>
+        <a href="#"> <span class="glyphicon glyphicon-envelope"></span> </a>
+        
+        <h5> 3. Inside input </h5>
+        <button type="button" class="btn btn-danger"> <span class="glyphicon glyphicon-envelope"></span> Email </button>
+        
+    </div>
+    
+    <div class="container-fluid">
+        <h3> Basic List Groups </h3>
+        
+        <h5> 1. type one </h5>
+        <ul class="list-group">
+            <li class="list-group-item"> First Item <span class="badge"> 22a </span> </li>
+            <li class="list-group-item"> Second Item </li>
+            <li class="list-group-item"> third Item </li>
+        </ul>
+        
+        <h5> 2. type two - list group with linked items </h5>
+        <div class="list-group">
+            <a href="#" class="list-group-item"> First item </a>
+            <a href="#" class="list-group-item"> Second item <span class="badge"> 223322 </span></a>
+            <a href="#" class="list-group-item"> Third item </a>
+        </div>
+        
+    </div>
+    
+    <div class="container">
+        
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+            <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+        </ul>
+        
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h3>HOME</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>Menu 1</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"> Website name </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"> <a href="#"> Home </a></li>
+                    <li> <a href="#"> home2 </a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     
     
-    
-    
-    
-    
-    
+    <!-- 1. BS navbar   https://www.w3schools.com/bootstrap/bootstrap_navbar.asp-->
+    <!-- 2. BS Scrollspy   https://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp-->
+     
+</body>
 </html>
 
 
